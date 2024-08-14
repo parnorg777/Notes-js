@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-family: "Neucha", cursive;
+}
+
+body {
+  background-color: #6fc191;
+}
+
+header {
+  width: 100%;
+  height: 55px;
+  background-color: rgb(170, 170, 170);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.556);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#add-notes-btn {
+  border: 2px solid black;
+  font-size: 1.15em;
+  border-radius: 5px;
+  padding: 3px;
+  transition: 0.2s;
+}
+
+#add-notes-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+main {
+  width: calc(100% - 50px);
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.notes {
+  width: 390px;
+  height: 390px;
+  background-color: blanchedalmond;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.334);
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 20px;
+  word-wrap: break-word;
+}
+
+.btn-container {
+  border-bottom: 1px solid gray;
+  padding-bottom: 3px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 7px;
+  gap: 3px;
+}
+
+.date {
+  margin-right: auto;
+  color: darkslategrey;
+  font-size: 0.7em;
+}
+
+.btn-notes {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-weight: normal;
+  background-color: rgba(0, 0, 0, 0.246);
+  border: none;
+}
+.btn-notes:hover {
+  background-color: rgba(0, 0, 0, 0.358);
+}
+
+img {
+  width: 11px;
+  height: 11px;
+}
+
+aside {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.575);
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-window {
+  width: 450px;
+  height: 450px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#btn-container-1 {
+  font-size: 1.2em;
+}
+
+.btn-notes-1 {
+  font-size: 14px;
+  width: 27px;
+  height: 27px;
+}
+
+form {
+  width: 100%;
+  height: 88%;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 1.3em;
+  box-sizing: border-box;
+  padding: 4px;
+  border: none;
+  resize: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#color-note-container {
+  align-self: center;
+  cursor: default;
+  display: flex;
+}
+
+#color-note {
+  width: 110px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-notes-2 {
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.btn-notes-2:hover {
+  background-color: rgba(0, 0, 0, 0.091);
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

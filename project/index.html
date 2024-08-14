@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image" href="images/889648.png" />
+    <title>Заметки</title>
+  </head>
+  <body>
+    <aside id="modal-close">
+      <div class="modal-window">
+        <div class="btn-container" id="btn-container-1">
+          <span class="date"></span>
+          <button class="btn-notes btn-notes-1" id="btn-Add">✔</button>
+          <button class="btn-notes btn-notes-1" id="modal-close">x</button>
+        </div>
+        <form action="">
+          <input type="text" name="note-id" hidden />
+          <input type="text" name="note-color" value="#FFFFFF" hidden />
+          <input type="text" name="note-date" hidden />
+          <textarea name="textarea" maxlength="350"></textarea>
+        </form>
+        <div id="color-note-container">
+          <button class="btn-notes btn-notes-2"><</button>
+          <div id="color-note">Белый</div>
+          <button class="btn-notes btn-notes-2">></button>
+        </div>
+      </div>
+    </aside>
+
+    <header>
+      <button id="add-notes-btn">Добавить заметку</button>
+    </header>
+
+    <main>
+      <div class="notes">
+        <div class="btn-container">
+          <span class="date">13.05.2024</span>
+          <button class="btn-notes"><img src="images/redact.png" /></button>
+          <button class="btn-notes">x</button>
+        </div>
+        <div>Зиысс текст бла бла бла</div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
